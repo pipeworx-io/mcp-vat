@@ -1,0 +1,18 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.pipeworx-io/vat",
+  "title": "Vat",
+  "description": "VAT-number format validation MCP (EU + UK/CH/NO).",
+  "version": "0.1.0",
+  "websiteUrl": "https://pipeworx.io/packs/vat",
+  "repository": {
+    "url": "https://github.com/pipeworx-io/mcp-vat",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://gateway.pipeworx.io/vat/mcp"
+    }
+  ]
+}
