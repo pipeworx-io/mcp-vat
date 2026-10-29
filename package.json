@@ -1,12 +1,20 @@
 {
   "name": "@pipeworx/mcp-vat",
-  "version": "0.1.1",
+  "version": "0.2.0",
   "description": "VAT-number format validation MCP (EU + UK/CH/NO).",
   "type": "module",
-  "main": "src/index.ts",
-  "types": "src/index.ts",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./tools.json": "./tools.json",
+    "./package.json": "./package.json"
+  },
   "bin": {
     "mcp-vat": "bin/cli.js"
+  },
+  "files": ["bin/", "lib/", "tools.json", "server.json"],
+  "engines": {
+    "node": ">=18"
   },
   "keywords": ["mcp", "mcp-server", "model-context-protocol", "pipeworx", "vat"],
   "license": "MIT",
@@ -14,19 +22,12 @@
     "type": "git",
     "url": "git+https://github.com/pipeworx-io/mcp-vat.git"
   },
-  "scripts": {
-    "typecheck": "tsc --noEmit"
-  },
-  "dependencies": {
-    "@modelcontextprotocol/sdk": "^1.30.0",
-    "tsx": "^4.19.0"
-  },
-  "devDependencies": {
-    "typescript": "^5.9.3",
-    "@cloudflare/workers-types": "^4.20260405.1"
-  },
+  "mcpName": "io.github.pipeworx-io/vat",
   "pipeworx": {
-    "sourceHash": "v1-964efc41224053805e7e1f896969bea2a04dcd31fb7a4f5a2a672962647d1eab",
-    "sourceCommit": "b0fb3c31386cf0256dcf1e2f1b3440435a87ec35"
+    "mode": "gateway",
+    "slug": "vat",
+    "gatewaySlug": "vat",
+    "sourceHash": "v1-d6ec922a6998a28a56fa31babd1b181ea0969bac0804867d949a03fa59d6587e",
+    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
   }
 }
