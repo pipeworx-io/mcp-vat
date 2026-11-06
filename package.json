@@ -1,6 +1,6 @@
 {
   "name": "@pipeworx/mcp-vat",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "VAT-number format validation MCP (EU + UK/CH/NO).",
   "type": "module",
   "main": "lib/index.js",
@@ -27,7 +27,7 @@
     "mode": "gateway",
     "slug": "vat",
     "gatewaySlug": "vat",
-    "sourceHash": "v1-d6ec922a6998a28a56fa31babd1b181ea0969bac0804867d949a03fa59d6587e",
-    "sourceCommit": "98853f34516646cb7c4c1460f09249b262c0269e"
+    "sourceHash": "v1-649de811bfcf718b1b77ceb16979f1a5cdcb96d8a18a0bef588790503bbc0fed",
+    "sourceCommit": "ca52e7ed1e1ccad897c2da1b0fa105edc0bc3b2e"
   }
 }
